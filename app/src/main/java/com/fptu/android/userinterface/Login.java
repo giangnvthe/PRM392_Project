@@ -28,7 +28,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_login);
         bindingView();
         bindingAction();
-        userLogin();
+
+//        userLogin();
 
     }
 
