@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "598497434812",
+    "project_id": "userinterface2",
+    "storage_bucket": "userinterface2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598497434812:android:4a7f1df10bd81bb61304b9",
+        "android_client_info": {
+          "package_name": "com.fptu.android.userinterface"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598497434812-1r89ptpn2ff1tq4r5mi490g70t79m1ml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvkxkwID8G_7YgjtKvfcc2oFhAPczj2rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598497434812-1r89ptpn2ff1tq4r5mi490g70t79m1ml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
