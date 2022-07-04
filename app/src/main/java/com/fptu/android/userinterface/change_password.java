@@ -3,6 +3,7 @@ package com.fptu.android.userinterface;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -47,6 +48,7 @@ public class change_password extends AppCompatActivity {
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(change_password.this,"Please check your email",Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(change_password.this, Login.class));
                 }else Toast.makeText(change_password.this,"some thing went wrong!Please try again!",Toast.LENGTH_LONG).show();
             }
         });
