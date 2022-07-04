@@ -54,8 +54,6 @@ public class change_password extends AppCompatActivity {
             }
         });
 
-
-
     }
     public void bindingView() {
         emailEdit= findViewById(R.id.email2);
