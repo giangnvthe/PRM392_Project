@@ -23,6 +23,7 @@ public class change_password extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_password);
+
         bindingView();
         resetPassBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +53,9 @@ public class change_password extends AppCompatActivity {
                 }else Toast.makeText(change_password.this,"some thing went wrong!Please try again!",Toast.LENGTH_LONG).show();
             }
         });
+
+
+
     }
     public void bindingView() {
         emailEdit= findViewById(R.id.email2);
