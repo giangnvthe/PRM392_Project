@@ -10,6 +10,5 @@ public class change_password extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_password);
-        //toan ngu vcl
     }
 }
