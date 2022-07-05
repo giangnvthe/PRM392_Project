@@ -79,7 +79,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             return;
         }
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            editEmail.setError("pls enter valid Email!");
+            editEmail.setError("Please enter valid Email!");
             editEmail.requestFocus();
             return;
         }
