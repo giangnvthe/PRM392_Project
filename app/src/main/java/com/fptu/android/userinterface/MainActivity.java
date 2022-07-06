@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(MainActivity.this, Login.class));
-                Toast.makeText(MainActivity.this, "logout success", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, "logout success", Toast.LENGTH_LONG).show(); //giangdz
             }
         });
     }
