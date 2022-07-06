@@ -3,6 +3,7 @@ package com.fptu.android.userinterface;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,7 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ViewProduct extends AppCompatActivity {
+public class ViewProduct extends AppCompatActivity{
 
     private Context context;
     private RecyclerView rcvUser;
@@ -32,8 +33,9 @@ public class ViewProduct extends AppCompatActivity {
         rcvUser = findViewById(R.id.rcv_users);
         rcvUser.setLayoutManager(new LinearLayoutManager(ViewProduct.this));
         //co dong ke de phan cach giua cac item
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
-        rcvUser.addItemDecoration(dividerItemDecoration);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(this, DividerItemDecoration.HORIZONTAL);
+        DividerItemDecoration dividerItemDecoration2 = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL);
+        rcvUser.addItemDecoration(dividerItemDecoration); rcvUser.addItemDecoration(dividerItemDecoration2);
 
     }
 
@@ -77,6 +79,8 @@ public class ViewProduct extends AppCompatActivity {
         setContentView(R.layout.activity_view_product);
         bindingView();
         bindingAction();
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,2);
+        rcvUser.setLayoutManager(gridLayoutManager);
     }
 
 

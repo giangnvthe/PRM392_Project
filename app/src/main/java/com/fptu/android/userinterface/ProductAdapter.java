@@ -37,9 +37,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.UserView
         if(product == null){
             return;
         }
-        holder.tvID.setText("ID: " + product.getId());
-        holder.tvName.setText("Name:" + product.getName());
-        holder.tvPrice.setText("Price: " +product.getPrice());
+        holder.tvName.setText(product.getName());
+        holder.tvPrice.setText(product.getPrice());
         Glide.with(holder.imageProduct.getContext()).load((product.getSurl())).into(holder.imageProduct);
     }
 
@@ -60,7 +59,6 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.UserView
 
         public UserViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvID = itemView.findViewById(R.id.tv_id);
             tvName = itemView.findViewById(R.id.tv_name);
             tvPrice = itemView.findViewById(R.id.tv_price);
             imageProduct = itemView.findViewById(R.id.imageProduct);
